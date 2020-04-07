@@ -1,7 +1,7 @@
 FROM alpine:3.11
 
 ENV JDK_VERSION=openjdk11-jre \
-WILDFLY_VERSION=wildfly-19.0.0.Final
+WILDFLY_VERSION=19.0.0.Final
 
 LABEL autor="Martin Vilche <mfvilche@gmail.com>" \
       io.k8s.description="Runtime image jdk alpine" \
