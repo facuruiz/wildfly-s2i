@@ -948,7 +948,7 @@
       required: true
     - name: WILDFLY_VERSION
       displayName: Versión de Wildfly a utilizar
-      value: '15'
+      value: '19'
       required: true
     - name: VERSION_JDK
       displayName: Versión de OPENJDK
