@@ -14,7 +14,7 @@ LABEL autor="Facundo Ruiz" \
 RUN apk add --update --no-cache $JDK_VERSION wget bash tzdata msttcorefonts-installer fontconfig && \
     update-ms-fonts && \
     fc-cache -f && \
-wget https://download.jboss.org/wildfly/$WILDFLY_VERSION/wildfly-$WILDFLY_VERSION.tar.gz --progress=bar:force -O /tmp/wildfly.tar.gz && \
+wget https://download.jboss.org/wildfly/wildfly-19.0.0.Final/wildfly-wildfly-19.0.0.Final.tar.gz --progress=bar:force -O /tmp/wildfly.tar.gz && \
 mkdir -p /opt/wildfly/standalone/configuration/custom /opt/config && tar zxvf /tmp/wildfly.tar.gz -C /opt/wildfly --strip-components 1 && rm -rf /tmp/wildfly.tar.gz
 COPY contrib/wfmodules/ /opt/wildfly/modules/
 COPY contrib/wfmodules/biz /opt/wildfly/modules/system/layers/base/biz
