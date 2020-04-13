@@ -741,7 +741,6 @@
                 <local-cache name="passivation">
                     <file-store passivation="true" purge="false"/>
                 </local-cache>
-                <local-cache name="sso"/>
                 <local-cache name="routing"/>
             </cache-container>
             <cache-container name="server" default-cache="default" module="org.wildfly.clustering.server">
