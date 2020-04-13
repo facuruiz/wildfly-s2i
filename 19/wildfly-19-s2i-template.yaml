@@ -560,7 +560,7 @@
                         <driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
                           <xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
 		    </driver>
-                  </drivers>
+              </drivers>
             </datasources>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:deployment-scanner:2.0">
