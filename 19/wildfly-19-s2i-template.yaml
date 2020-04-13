@@ -556,11 +556,11 @@
                     <driver name="postgresql" module="org.postgresql.jdbc">
                         <driver-class>org.postgresql.Driver</driver-class>
                     </driver>
-                    <driver name="oracle" module="com.oracle">
-                        <driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
-                          <xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
-		    </driver>
-                </drivers>
+                            <driver name="oracle" module="com.oracle">
+                          <driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+                    <xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
+            </driver>
+                        </drivers>
              </datasources>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:deployment-scanner:2.0">
