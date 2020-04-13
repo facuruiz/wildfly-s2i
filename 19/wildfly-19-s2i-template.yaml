@@ -559,7 +559,7 @@
                     <driver name="oracle" module="com.oracle">
                         <driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
                           <xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
-		    </driver>
+		</driver>
               </drivers>
             </datasources>
         </subsystem>
