@@ -559,9 +559,9 @@
                     <driver name="oracle" module="com.oracle">
                         <driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
                           <xa-datasource-class>oracle.jdbc.xa.client.OracleXADataSource</xa-datasource-class>
-		</driver>
-              </drivers>
-            </datasources>
+		    </driver>
+                </drivers>
+             </datasources>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:deployment-scanner:2.0">
             <deployment-scanner path="deployments" relative-to="jboss.server.base.dir" scan-interval="5000" runtime-failure-causes-rollback="${jboss.deployment.scanner.rollback.on.failure:false}"/>
