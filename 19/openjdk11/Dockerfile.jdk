@@ -2,7 +2,7 @@ FROM alpine:3.11
 
 ENV MAVEN_VERSION=3.6.3 \
 JDK_VERSION=openjdk11-jdk \
-WILDFLY_VERSION=wildfly-19.0.0.Final
+WILDFLY_VERSION=19.0.0.Final
 
 LABEL autor="Martin Vilche <mfvilche@gmail.com>" \
       io.k8s.description="Compilador de aplicaciones java con maven s2i" \
