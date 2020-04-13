@@ -1,0 +1,43 @@
+version: '3.3'
+services:
+  wildfly:
+    build:
+     context: openjdk11
+     dockerfile: Dockerfile.jre
+    image: wildfly19
+    volumes:
+     - $PWD/wildfly/deployments:/opt/wildfly/standalone/deployments
+     - $PWD/wildfly/standalone.xml:/opt/wildfly/standalone/configuration/custom/standalone.xml
+    environment:
+     - WAITFOR_HOST=database
+     - WAITFOR_PORT=5432
+    ports:
+     - "8181:8080"
+    networks:
+     - integracion
+
+ 
+
+  database:
+    image: postgres:12
+    ports:
+     - "5433:5432"
+    environment:
+     - POSTGRES_DB=sifotur
+     - POSTGRES_PASSWORD=sifotur
+    volumes:
+     - $PWD/database:/var/lib/postgresql/data
+    networks:
+     - integracion
+
+ 
+
+
+networks:
+  integracion:
+      driver: bridge
+      ipam:
+        driver: default
+        config:
+         - subnet: 163.118.12.0/24
+

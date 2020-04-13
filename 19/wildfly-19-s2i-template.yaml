@@ -328,7 +328,7 @@
         contextDir: ${WILDFLY_VERSION}/openjdk${VERSION_JDK}
         git:
           ref: master
-          uri: 'https://github.com/mvilche/wildfly-s2i.git'
+          uri: 'https://github.com/facuruiz/wildfly-s2i.git'
         type: Git
       strategy:
         dockerStrategy:
